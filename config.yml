@@ -1,0 +1,79 @@
+file_type: xml
+path_to_root: 
+  - export
+  - fcsNotificationZP
+customer:
+  full_name: 
+    - purchaseResponsible
+    - responsibleOrg
+    - fullName
+  reg_num: 
+    - purchaseResponsible
+    - responsibleOrg
+    - regNum
+  postal_adress:
+    - purchaseResponsible
+    - responsibleOrg
+    - postAddress
+  legal_adress:
+    - purchaseResponsible
+    - responsibleOrg
+    - factAddress
+  inn: 
+    - purchaseResponsible
+    - responsibleOrg
+    - INN
+  kpp: 
+    - purchaseResponsible
+    - responsibleOrg
+    - KPP 
+  phone: 
+    - purchaseResponsible
+    - responsibleInfo
+    - contactPhone
+  email:
+    - purchaseResponsible
+    - responsibleInfo
+    - contactEMail
+purchase: 
+  name: 
+    - purchaseObjectInfo
+  create_date_time:
+    - docPublishDate
+  guid:
+    - purchaseNumber
+lots: 
+  price: 
+    - lot
+    - maxPrice
+lot_items:
+  okpd_code:
+    - lot
+    - purchaseObjects
+    - purchaseObject
+    - OKPD
+    - code
+  okpd_name:
+    - lot
+    - purchaseObjects
+    - purchaseObject
+    - OKPD
+    - name
+  okei_code:
+    - lot
+    - purchaseObjects
+    - purchaseObject
+    - OKEI
+    - code
+  okei_national_code:
+    - lot
+    - purchaseObjects
+    - purchaseObject
+    - OKEI
+    - nationalCode 
+  qty:
+    - lot
+    - purchaseObjects
+    - purchaseObject
+    - quantity
+    - value
