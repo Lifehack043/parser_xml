@@ -8,8 +8,8 @@ module Operations
         result = Purchase.create(input[:purchase])
         if result
           Parser.logger.info "Purchase created #{result.attributes} with: \n 
-                              lots #{result.lots} n\
-                              lots_item #{result.lots.each { |lot| lot.lot_items }}"
+                              lots #{result.lots.to_a} \n
+                              lots_item #{result.lots.to_a}"
           Success(result)
         else 
           return Failure(result)
